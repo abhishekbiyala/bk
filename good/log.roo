@@ -1,0 +1,18 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-03-23 22:32:41
+project --topLevelPackage com.tms.vsc.pcps.test --projectName good --java 6 --packaging JAR
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-03-23 22:32:43
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-03-23 22:32:48
+// [failed] jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+// [failed] jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-03-23 23:00:56
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-03-23 23:03:47
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity jpa --class ~.Timer --testAutomatically
+field string --fieldName message --notNull
+hint web mvc
+web mvc setup
+web mvc all --package ~.web
+selenium test --controller ~.web.TimerController
+web gwt setup
+web gwt all --proxyPackage ~.client.proxy --requestPackage ~.client.request
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-03-24 07:55:20

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_tms_vsc_pcps_test_Timer" items="${timers}" z="VKSFF7uDIM8KTuJL8TZV9v4FH3s=">
+        <table:table data="${timers}" id="l_com_tms_vsc_pcps_test_Timer" path="/timers" z="kVyqAL0BVwFl1zOlW5wvd5rLlU0=">
+            <table:column id="c_com_tms_vsc_pcps_test_Timer_message" property="message" z="Zi24+4+UCfkhj0vwRggRuqPa2ig="/>
+        </table:table>
+    </page:list>
+</div>
